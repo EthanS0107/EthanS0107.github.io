@@ -1,0 +1,116 @@
+/*Inter*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/*Indie Flower*/
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/*Fredericka the Great*/
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./img/head-4_v2.jpg);
+}
+
+header {
+  text-align: center;
+  margin: 5%;
+}
+
+header p {
+  color: #c2b280;
+  font-size: calc(0.5em + 2vw);
+  font-weight: 300;
+}
+
+header h1 {
+  color: #a67b5b;
+  font-size: calc(0.5em + 6vw);
+  margin-bottom: 2%;
+}
+
+footer {
+  color: #fff;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.photo-profile {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+}
+
+.navigation {
+  padding: 10px;
+}
+
+.navigation ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: calc(0.5em + 2vw);
+}
+
+.navigation a {
+  color: #f5f5dc;
+  text-decoration: none;
+  margin: 1%;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation li {
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .navigation ul {
+    display: block;
+  }
+}
+
+.curseur {
+  cursor: pointer;
+}
+
+.icon {
+  display: block;
+  font-size: 5vh;
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1%;
+  font-size: calc(0.5em + 1vw);
+}
+
+.value {
+  display: block;
+  font-size: calc(0.5em + 1vw);
+}
+
+.space-between {
+  justify-content: space-evenly;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,500 @@
+/*Inter*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/*Indie Flower*/
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/*Fredericka the Great*/
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+/*Playball*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playball&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #e0dcc1;
+}
+
+nav {
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  font-size: calc(0.01em + 1.5vw);
+  border-color: #760507;
+  border-style: solid solid solid solid;
+  border-width: 8px 8px 8px 8px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+}
+
+nav a {
+  text-decoration: none;
+  color: #760507;
+}
+
+nav li {
+  margin: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  list-style: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#icons {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #icons {
+    display: block;
+  }
+  #icons:before {
+    color: #760507;
+    content: "\2630";
+  }
+  .active #icons:before {
+    content: "\2715";
+  }
+  nav.active {
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 320px;
+    font-size: calc(0.5rem + 1.5vw);
+    border-color: #760507;
+    border-style: none none none none;
+  }
+  nav {
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    font-size: calc(0.5rem + 1.5vw);
+    border-color: #760507;
+    border-style: solid solid solid solid;
+    border-width: 10px 10px 10px 10px;
+    transition: 0.25s;
+  }
+  nav ul {
+    position: fixed;
+    left: 100%;
+    top: 3%;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+  }
+
+  nav li {
+    padding: 3px 0;
+  }
+  nav li:hover {
+    background-color: #fff;
+  }
+  nav.active ul {
+    left: 0;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: calc(0.5rem + 1.5vw);
+  }
+}
+
+.icon {
+  display: block;
+  font-size: calc(1rem + 1.5vw);
+  margin-right: 30px;
+}
+
+h1 {
+  margin-bottom: 5%;
+  color: #760507;
+  font-size: calc(1rem + 3vw);
+  background-color: #dcdcdc;
+  border-color: #760507;
+  border-style: double;
+  border-width: 5px 5px 5px 5px;
+  border-radius: 30px;
+  background-clip: padding-box;
+  font-family: "Fredericka the Great", serif;
+  max-width: calc(100px + 50vw);
+  margin-inline: auto;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 70px;
+  mask-border: 100px;
+  margin-right: 75px;
+}
+
+h4 {
+  font-size: calc(0.5em + 2vw);
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+p {
+  font-size: calc(0.5em + 1vw);
+  line-height: normal;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+button {
+  background-color: #e0dcc1;
+  border: none;
+  font-family: "Playball", "serif";
+  cursor: pointer;
+}
+
+button:hover {
+  color: #760507;
+}
+
+.bouton-active-sport:hover {
+  transform: rotate(7deg) scale(1.2);
+  transition: 0.5s;
+}
+.bouton-active-voyage:hover {
+  transform: rotate(7deg) scale(1.2);
+  transition: 0.5s;
+}
+.bouton-active-pêche:hover {
+  transform: rotate(7deg) scale(1.2);
+  transition: 0.5s;
+}
+.bouton-active-jeu-stratégie:hover {
+  transform: rotate(7deg) scale(1.2);
+  transition: 0.5s;
+}
+.bouton-active-jeu-vidéo:hover {
+  transform: rotate(7deg) scale(1.2);
+  transition: 0.5s;
+}
+
+.texte-passion {
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top: 4%;
+  margin-bottom: 0;
+}
+
+.texte-sport {
+  display: none;
+  position: absolute;
+}
+
+.texte-img {
+  display: flex;
+  justify-content: space-around;
+}
+.texte-img img {
+  margin: 1%;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: auto;
+  height: auto;
+  max-height: calc(20px + 20vw);
+}
+
+.texte-voyage {
+  display: none;
+  position: absolute;
+}
+
+.texte-pêche {
+  display: none;
+  position: absolute;
+}
+
+.texte-jeu-stratégie {
+  display: none;
+  position: absolute;
+}
+
+.texte-jeu-vidéo {
+  display: none;
+  position: absolute;
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.home {
+  padding: 0px;
+  margin-top: 25px;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.curseur {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section {
+  padding: 3% 0;
+}
+
+.boxed_calc {
+  max-width: calc(200px + 50vw);
+  margin-inline: auto;
+}
+.boxed_1900 {
+  max-width: 1900px;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w32 {
+  width: 32%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w50 {
+  width: 60%;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.ligne-timeline {
+  border-top: 3px solid #000;
+}
+.timeline {
+  position: relative;
+  max-width: 1400px;
+  margin: 100px auto;
+  margin-top: 0;
+}
+
+.timeline h2 {
+  font-size: calc(1em + 1vw);
+  color: #760507;
+  margin-bottom: 0px;
+}
+
+.timeline p {
+  font-size: calc(0.3em + 1vw);
+  margin: 0;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: calc(50% - 100px);
+  margin-top: 50px;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container:nth-child(1) {
+  animation-delay: 0s;
+}
+.container:nth-child(2) {
+  animation-delay: 1s;
+}
+.container:nth-child(3) {
+  animation-delay: 2s;
+}
+.container:nth-child(4) {
+  animation-delay: 3s;
+}
+.container:nth-child(5) {
+  animation-delay: 4s;
+}
+.container:nth-child(6) {
+  animation-delay: 5s;
+}
+.container:nth-child(7) {
+  animation-delay: 6s;
+}
+.container:nth-child(8) {
+  animation-delay: 7s;
+}
+
+.container img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  top: 32px;
+  right: -20px;
+  z-index: 10;
+}
+
+.text-box {
+  padding: 20px 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.text-box h2 {
+  font-weight: 600;
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: 50%;
+}
+
+.right-container img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #000;
+  top: -50px;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 8s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+  right: -14px;
+}
+
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: -14px;
+}
+
+@media screen and (max-width: 650px) {
+  .timeline h2 {
+    font-size: calc(1em + 1vw);
+  }
+
+  .timeline p {
+    font-size: calc(0.5em + 1vw);
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  .container {
+    width: 75%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .text-box small {
+    margin-bottom: 10px;
+  }
+  .right-container {
+    left: 0;
+  }
+  .left-container img,
+  .right-container img {
+    left: 10px;
+  }
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -14px;
+  }
+}
